@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 95%;
+    margin: auto;
+  }
+  
+  h1 {
+      color: #fec107;
+      text-align: center;
+    font-size: 40px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 5px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row .column {
+     margin: auto;
+    padding: 6px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    margin: auto;
+    padding: 10px 0%;
+    float: left;
+    width: 25%;
+    border:2px solid #ffffff ;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 5px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1200px) {
+    .column {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 25px;
+    }
+  }
